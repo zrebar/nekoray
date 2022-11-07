@@ -16,7 +16,7 @@ fi
 command -v pkill >/dev/null 2>&1 || exit
 
 BASEDIR=$(dirname "$0")
-cd $BASEDIR
+cd "$BASEDIR"
 
 pre_start_linux() {
   # set bypass: fwmark
